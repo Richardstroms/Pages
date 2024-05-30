@@ -1,0 +1,125 @@
+/* Enkel CSS-reset */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+/* Färgpalett */
+:root {
+  --rose: #f72585ff;
+  --fandango: #b5179eff;
+  --grape: #7209b7ff;
+  --chrysler-blue: #560badff;
+  --dark-blue: #480ca8ff;
+  --zaffre: #3a0ca3ff;
+  --vivid-sky-blue: #4cc9f0ff;
+}
+
+/* bakgrunden */
+body {
+  background-color: rgb(145, 145, 145);
+  margin: auto;
+  background-size: cover;
+}
+
+/* Sidan */
+.kontainer {
+  width: 800px;
+  margin: auto;
+  padding: 50px;
+  background-color: var(--zaffre);
+}
+.kontainer h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--rose);
+  text-align: center;
+  font-size: 100px;
+}
+
+/* Menyn */
+.kontainer .meny {
+  display: flex;
+  gap: 10px;
+}
+.kontainer .meny li {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--rose);
+  list-style-type: none;
+}
+.kontainer .meny li a {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--rose);
+  text-decoration: none;
+  background-color: var(--grape);
+  padding: 10px;
+  width: 120px;
+  display: inline-block;
+  font-size: 13px;
+  text-align: center;
+  box-shadow: 1px 1px 1px black;
+}
+.kontainer .meny li a.aktiv {
+  background-color: var(--fandango);
+}
+.kontainer .meny li a:hover {
+  background-color: var(--fandango);
+}
+
+/* Innehållet */
+.kontainer h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--rose);
+  text-align: center;
+  margin: 30px;
+}
+.kontainer figure {
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  background-color: var(--chrysler-blue);
+}
+.kontainer figure img {
+  width: 100%;
+}
+.kontainer figure figcaption {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--vivid-sky-blue);
+}
+.kontainer p {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--vivid-sky-blue);
+}
+.kontainer p.sidfot a {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--rose);
+}
+
